@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Prime numbers from 1 to 50:"
+echo "Prime numbers from 1 to 100:"
 
 
-for (( num=2; num<=50; num++ ))
+for (( num=2; num<=100; num++ ))
 do
     is_prime=1
 

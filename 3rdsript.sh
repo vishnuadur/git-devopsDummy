@@ -10,10 +10,13 @@ fi
 echo "Starting cleanup process for: $TARGET_DIR"
 echo "Searching for and deleting empty files older than 2 months..."
 
+
 find "$TARGET_DIR" -type f -mtime +120 -size 0 -print -delete
+
 
 echo "--------------------------------------------------------"
 echo "Searching for and deleting empty directories older than 2 months..."
+
 
 find "$TARGET_DIR" -type d -mtime +120 -empty -print -delete
 
